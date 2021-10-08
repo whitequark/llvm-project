@@ -166,6 +166,8 @@
 #  define _LIBUNWIND_CONTEXT_SIZE 34
 #  define _LIBUNWIND_CURSOR_SIZE 46
 #  define _LIBUNWIND_HIGHEST_DWARF_REGISTER _LIBUNWIND_HIGHEST_DWARF_REGISTER_S390X
+#elif defined(__wasm__)
+#  define _LIBUNWIND_TARGET_WASM 1
 # else
 #  error "Unsupported architecture."
 # endif
