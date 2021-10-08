@@ -151,6 +151,8 @@
 #  define _LIBUNWIND_CONTEXT_SIZE 67
 #  define _LIBUNWIND_CURSOR_SIZE 79
 #  define _LIBUNWIND_HIGHEST_DWARF_REGISTER _LIBUNWIND_HIGHEST_DWARF_REGISTER_VE
+#elif defined(__wasm__)
+#  define _LIBUNWIND_TARGET_WASM 1
 # else
 #  error "Unsupported architecture."
 # endif
